@@ -4,3 +4,5 @@ TO DO:
 - Ordenar la librería y sacar las funciones repetidas en los programas de los incisos F y G
 - Hacer el H (usando las funciones de la librería)
 - Subir el Word al repositorio
+- Depurar programa de inciso G
+- En general, dejarlo prolijo corta
