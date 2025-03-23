@@ -10,7 +10,7 @@ void convertirNumBinarioADecimal (int[],char[]);
 int leerNumeroHexadecimal(char[]);
 int esDigitoHexa(char);
 int dentroRangoHexa(char[]);
-char convertirDigitoHexaABinario(char[]);
+int convertirDigitoHexaABinario(char);
 
 int main()
 {
@@ -32,14 +32,14 @@ int main()
     char numeroDecimal [10]; //decimal --> ±eee.ffff + '\0'
     convertirNumBinarioADecimal(numeroPuntoFijo,numeroDecimal);
 
-    printf("\nEl numero en hexadecimal es: %s",numeroDecimal);
+    printf("\nEl numero en decimal es: %s",numeroDecimal);
 
     return 0;
 }
 
 
 
-int numeroHexadecimalValido(char[] hexaIngresado){
+int numeroHexadecimalValido(char* hexaIngresado){
     if (leerNumeroHexadecimal(hexaIngresado)==1){
         printf("El número ingresado no cumple con el formato 0xHHHH \n");
         return 1; //no cumplió con el formato
@@ -54,29 +54,32 @@ int numeroHexadecimalValido(char[] hexaIngresado){
     return 0; //salio todo bien
 }
 
-int esDigitoHexa(char){
-    //me fijo si el caracter está entre 'A' y 'Z', o '0' y '9'
-    if ((char>(A-1) && char<(Z+1))
+int esDigitoHexa(char c){
+    //me fijo si el caracter está entre 'A' y 'F', o '0' y '9'
+    if ( (c>('A'-1)) && (c<('F'+1)) )
         return 0;
-    if (char>47 && char<58)
+    if ( (c>('0'-1)) && (c<('9'+1)) )
         return 0;
     return 1;
 }
 
 int leerNumeroHexadecimal(char* hexaIngresado){
     printf("\nIngrese un número hexadecimal con el siguiente formato: 0xHHHH \n");
-    scanf(" %s", hexaIngresado);
+    scanf("%s", hexaIngresado);
 
-    if(strlen(hexaIngresado) != 5){
+    printf("\nEl hexa ingresado es: %s\n", hexaIngresado);
+    printf("\nLongitud es: %d\n", strlen(hexaIngresado));
+
+    if(strlen(hexaIngresado) != 4){ //entiendo que el strlen no me cuenta el terminador \0
         return 1; //hubo error en formato
     }
 
     int i=0;
     int aux=esDigitoHexa(hexaIngresado[0]);
     //verifica uno por uno, que el string contenga digitos hexadecimales
-    while(aux==0 && i<5){
-        aux=esDigitoHexa(hexaIngresado[i]);
+    while(aux==0 && i<3){
         i++;
+        aux=esDigitoHexa(hexaIngresado[i]);
     }
 
     return aux; //si está todo bien retorna 0, si no retorna 1
@@ -88,7 +91,7 @@ int dentroRangoHexa(char* hexaIngresado){
         return 2; //no lo puedo representar
     }
 
-    if(strcmp(hexaIngresado, MIN_HEXA)>0){
+    if(strcmp(hexaIngresado, MIN_HEXA)<0){
         return 2; //no lo puedo representar
     }
 
@@ -96,49 +99,75 @@ int dentroRangoHexa(char* hexaIngresado){
 }
 
 int convertirDigitoHexaABinario(char c){
-    if (c=='0')
-        return 0000;
-    if (c=='1')
-        return 0001;
-    if (c=='2')
-        return 0010;
-    if (c=='3')
-        return 0011;
-    if (c=='4')
-        return 0100;
-    if (c=='5')
-        return 0101;
-    if (c=='6')
-        return 0110;
-    if (c=='7')
-        return 0111;
-    if (c=='8')
-        return 1000;
-    if (c=='9')
-        return 1001;
-    if (c=='A')
-        return 1010;
-    if (c=='B')
-        return 1011;
-    if (c=='C')
-        return 1100;
-    if (c=='D')
-        return 1101;
-    if (c=='E')
-        return 1110;
-    if (c=='F')
-        return 1111;
-}
-
-void convertirNumHexaABinario(char[],int[]){
-    int i=0;
-    for(i=0;i<4;i++){
-
+    switch (c){
+        case '0': return 0b0000; //prefijo 0b para indicar binario
+        case '1': return 0b0001; //si no lo indico, entonces me toma
+        case '2': return 0b0010; //como números octales y no como binario
+        case '3': return 0b0011;
+        case '4': return 0b0100;
+        case '5': return 0b0101;
+        case '6': return 0b0110;
+        case '7': return 0b0111;
+        case '8': return 0b1000;
+        case '9': return 0b1001;
+        case 'A': return 0b1010;
+        case 'B': return 0b1011;
+        case 'C': return 0b1100;
+        case 'D': return 0b1101;
+        case 'E': return 0b1110;
+        case 'F': return 0b1111;
+        default:  return -1;  //hubo un error
     }
 }
 
-void convertirNumBinarioADecimal (int[],char[]){
+void convertirNumHexaABinario(char* hexaIngresado, int* numeroPuntoFijo){
+    int i = 0; //Índice para recorrer hexaIngresado 0xHHHH
+    int j = 0; //Índice para recorrer los bits de cada dígito hexadecimal
+    int k = 0; //Índice para cargar los bits en numeroPuntoFijo
+
+    //Recorro cada dígito hexa
+    for (i = 0; i < 4; i++) {
+        //Convierto el dígito hexa a binario de 4 bits
+        int aux = convertirDigitoHexaABinario(hexaIngresado[i]);
+
+        //Cargo los 4 bits en numeroPuntoFijo
+        for (j = 3; j >= 0; j--) {
+            //Extraigo de atrás para adelante, y voy cargando en numeroPuntoFijo
+            numeroPuntoFijo[k] = (aux >> j) & 1;
+            k++; // Avanzar al siguiente bit en numeroPuntoFijo
+        }
+    }
+
+    printf("\n\nA ver el binario final: ");
+    for (int i=0; i<16; i++){
+        printf("%d", numeroPuntoFijo[i]);
+    }
+
 }
 
+void convertirNumBinarioADecimal (int* numeroPuntoFijo, char* numeroDecimal){
+    // guardo signo
+    int signo = numeroPuntoFijo[0];
 
+    // extraigo parte entera (7 bits)
+    int parteEntera = 0;
+    for (int i = 1; i < 8; i++) {
+        parteEntera += numeroPuntoFijo[i] * (1 << (7 - i));
+    }
 
+    // extraigo parte fraccionaria (8 bits)
+    int parteFraccionaria = 0;
+    for (int i = 8; i < 16; i++) {
+        parteFraccionaria += numeroPuntoFijo[i] * (1 << (15 - i));
+    }
+
+    // combino parte entera y fraccionaria en un mismo número
+    int resultado = parteEntera * 256 + parteFraccionaria;
+    // acá multiplico por 256, para desplazar el numero 8 lugares (2^8) y dejar esos bits en la parte baja para meter la parte fraccionaria
+
+    parteEntera = resultado / 256; // parte entera real (dividir por 256)
+    parteFraccionaria = resultado % 256; // parte fraccionaria real (el resto de 256)
+
+    // genero el string en formato ±eee.ffff
+    sprintf(numeroDecimal, "%s%d.%04d", (signo == 1) ? "-" : "+", parteEntera, parteFraccionaria);
+}

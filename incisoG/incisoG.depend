@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1742719249 source:c:\users\alber\desktop\1 cuatri\idl\incisog\main.c
+	<stdio.h>
+	<stdlib.h>
+	"miLibreria.h"
+
+1742707472 c:\users\alber\desktop\1 cuatri\idl\milibreria\milibreria.h
+
