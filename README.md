@@ -1,3 +1,5 @@
+En la línea 88 del incisoF, la cota del índice del while debería ser 9 y no 10.
+
 TO DO:
 
 - Establecer rangos para los números hexadecimales
