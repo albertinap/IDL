@@ -1,38 +1,40 @@
 #ifndef MILIBRERIA_H_INCLUDED
 #define MILIBRERIA_H_INCLUDED
+#define MAX "+127.9960"
+#define max 127.9960 * 256
+#define MIN "-128"
+#define min -128.0 * 256
+// Declaraciï¿½n de funciones
 
-// Declaración de funciones
-
-//verifica si un char es un número. Retorna 0 si es digito, y 1 caso contrario
+// verifica si un char es un nï¿½mero. Retorna 0 si es digito, y 1 caso contrario
 int esDigito(char);
 
-//lee un número decimal escrito en string y verifica que sea una entrada valida:
-//o sea que cumpla con el formato ±eee.ffff; y que esté dentro de un rango preestablecido
-//retorna 0 si el número es valido, y 1 en caso contrario
-int numeroValido(char[]);
+// lee un nï¿½mero decimal escrito en string y verifica que sea una entrada valida:
+// o sea que cumpla con el formato ï¿½eee.ffff; y que estï¿½ dentro de un rango preestablecido
+// retorna 0 si el nï¿½mero es valido, y 1 en caso contrario
+int numeroValido(char *);
 
-//lee un número decimal de teclado en formato string, y verifica que cumpla con el formato ±eee.ffff
-//devuelve 0 si el formato es válido, y 1 en caso contrario
-int leerNumero(char[]);
+// lee un nï¿½mero decimal de teclado en formato string, y verifica que cumpla con el formato ï¿½eee.ffff
+// devuelve 0 si el formato es vï¿½lido, y 1 en caso contrario
+int leerNumero(char *);
 
-//verifica que un número decimal escrito en formato string esté dentro de un rango
-//retorna 0 si está dentro, y 2 en caso contrario
-int dentroRango(char[]);
+// verifica que un nï¿½mero decimal escrito en formato string estï¿½ dentro de un rango
+// retorna 0 si estï¿½ dentro, y 2 en caso contrario
+int dentroRango(char *);
 
-//convierte un número decimal escrito en string, a un número en binario
-//retorna el número en binario en la variable pasada por parámetro
-void convertirNumABinario(char[], int[]);
+// convierte un nï¿½mero decimal escrito en string, a un nï¿½mero en binario
+// retorna el nï¿½mero en binario en la variable pasada por parï¿½metro
+void convertirNumABinario(char *, int *);
 
-//convierte un número en binario, a un número en hexadecimal 0xHHHH
-//retorna el número en hexa en la variable pasada por parámetro
-void convertirNumBinarioAHexa(int[], char[]);
+// convierte un nï¿½mero en binario, a un nï¿½mero en hexadecimal 0xHHHH
+// retorna el nï¿½mero en hexa en la variable pasada por parï¿½metro
+void convertirNumBinarioAHexa(int *, char *);
 
-//convierte un set de cuatro dígitos binarios, a un número en hexa
-//retorna el hexadecimal correspondiente
-char convertirDigitoBinarioAHexa(char[]);
+// convierte un set de cuatro dï¿½gitos binarios, a un nï¿½mero en hexa
+// retorna el hexadecimal correspondiente
+char convertirDigitoBinarioAHexa(char *);
 
-//suma dos números binarios, teniendo en cuenta los carrys
-void sumarBinarios(int[], int[]);
-
+// suma dos nï¿½meros binarios, teniendo en cuenta los carrys
+void sumarBinarios(int *, int *);
 
 #endif // MILIBRERIA_H_INCLUDED
