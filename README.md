@@ -1,4 +1,3 @@
-En la línea 88 del incisoF, la cota del índice del while debería ser 9 y no 10.
 
 TO DO:
 
@@ -6,4 +5,4 @@ TO DO:
 - Ordenar la librería y sacar las funciones repetidas en los programas del inciso G
 - Subir el Word al repositorio
 - Depurar programa de inciso G
-- depurar programa inciso h(no lo pude compilar porque no me compila la libreria pero es tema mio, lucho)
+- depurar programa inciso h(lo depuere tres veces y anda pero para estar 100% seguro, dar un x que haga que haya overflow no lo hice)
