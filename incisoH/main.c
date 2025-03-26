@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 #define max 65535.99997
 #define min -65536.00000
 #define maxM "0.999969"
@@ -28,10 +29,25 @@ long int convertirNumMABinario(char*);
 void convertirNumBinarioAHexa(long int, char*);
 char convertirDigitoBinarioAHexa(int);
 
+void convertirNumBinarioADecimal(long int, char*);
 
 
 int main()
 {
+    //printf("Tamaño de long long: %zu bits\n", sizeof(long long) * 8);
+
+    long int prueba=0xFFFF8000; //0111 1111 1111 1111 0111 1111 1111 1111
+
+    printf("\nla variable prueba en binario es: ");
+    for (int i = 31; i >= 0; i--) {
+        printf("%d", (prueba >> i) & 1);  // Extraer cada bit individual
+    }
+
+    char decimalPrueba[32];
+    convertirNumBinarioADecimal(prueba,decimalPrueba);
+    printf("\n Decimal de prueba: %s",decimalPrueba);
+
+
     //ingresar los valores de m, b, x, luego validar la entrada
     int res;
 
@@ -56,15 +72,6 @@ int main()
     long int mb; // binario
     mb=convertirNumMABinario(m); //ya queda en Q(16,15)
 
-    //aca es donde tengo que ver que si el valor de x hace que y tenga overflow
-
-
-    long int prueba= (bb*mb);
-    printf("\n\nla variable calculo en binario es: ");
-    for (int i = 31; i >= 0; i--) {
-        printf("%d", (prueba >> i) & 1);  // Extraer cada bit individual
-    }
-
     char x[33];//Q(16,15) y un bit para '/0'
     res = validarX(x, bb, mb);
 
@@ -72,6 +79,7 @@ int main()
         res = validarX(x, bb, mb);
 
     int binarioX=convertirNumXABinario(x);
+
 
 
     /*
@@ -329,7 +337,10 @@ int dentroRangoX(char *x, long int b, long int m)
         printf("%d", (b >> i) & 1);  // Extraer cada bit individual
     }
 
-    int calculoAux =(m*xpf)+b;
+    long long int calculoAux;
+    calculoAux=((int64_t)m * xpf);
+    calculoAux=calculoAux>>15;
+    calculoAux+=b;
 
     printf("\nla variable Y en binario es: ");
     for (int i = 31; i >= 0; i--) {
@@ -338,7 +349,7 @@ int dentroRangoX(char *x, long int b, long int m)
 
     char ystring [12];
     convertirNumBinarioADecimal(calculoAux,ystring);
-    printf("\n\nEL VALOR DE Y: %s",ystring);
+    printf("\n\nEL VALOR DE Y: %s\n",ystring);
 
     if (calculoAux > (max) || calculoAux < (min))
         return 2;
@@ -463,28 +474,36 @@ long int convertirNumXABinario(char* numIngresado){
 }
 
 //convierte un numero de 32 bits de Q(16,15) a un decimal (+/-)eeeee.fffff
-void convertirNumBinarioADecimal(int numeroPuntoFijo, char *numeroDecimal)
-{
-    // Extraer el bit de signo (bit 15)
+void convertirNumBinarioADecimal(long int numeroPuntoFijo, char *numeroDecimal){
+
+    // Extraer el bit de signo (bit 32)
     int signo = (numeroPuntoFijo >> 31) & 1;
-    // Extraer parte entera (16 bits, posiciones 30 a 15)
-    int parteEntera = (numeroPuntoFijo >> 30) & 0b1111111111111111;
-    // Extraer parte fraccionaria (15 bits, posiciones 14 a 0)
-    int parteFraccionaria = numeroPuntoFijo & 0b0111111111111111;
+
+    // Extraer parte entera (7 bits, posiciones 14 a 8)
+    int parteEntera = (numeroPuntoFijo >> 15) & 0xFFFF;
+
+    // Extraer parte fraccionaria (8 bits, posiciones 7 a 0)
+    unsigned int parteFraccionaria = numeroPuntoFijo & 0x7FFF;
+
+    printf("\nla PARTE FRACCIONARIA en binario es: ");
+    for (int i = 14; i >= 0; i--) {
+        printf("%d", (parteFraccionaria >> i) & 1);  // Extraer cada bit individual
+    }
 
     // Para números negativos: calcular el valor absoluto
     if (signo == 1) {
         // Invertir bits y restar 1 (ca2)
-        int valorAbsoluto = (~numeroPuntoFijo - 1) & 0x7FFFFFFF; // Máscara para 15 bits
-        parteEntera = (valorAbsoluto >> 15) & 0x7FFF;
-        parteFraccionaria = valorAbsoluto & 0b0111111111111111;
+        int valorAbsoluto = (~numeroPuntoFijo - 1) & 0x7FFFFFFF; // Máscara para 31 bits
+        parteEntera = (valorAbsoluto >> 15) & 0xFFFF;
+        parteFraccionaria = valorAbsoluto & 0x7FFF;
     }
 
     // Calcular la parte fraccionaria como valor decimal (0.xxxxx)
-    int fraccionEscalada = (parteFraccionaria * 100000) / 512;  // Escalar a 5 decimales
+    unsigned int fraccionEscalada = (parteFraccionaria * 100000 ) / 32768;  // Escalar a 5 decimales
 
     // Formatear el resultado
     sprintf(numeroDecimal, "%s%d.%d",(signo == 1) ? "-" : "+",parteEntera,fraccionEscalada);
+
 }
 
 void convertirNumBinarioAHexa(long int numEnBinario, char *numeroHexa){
