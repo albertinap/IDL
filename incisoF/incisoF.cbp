@@ -35,10 +35,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../miLibreria/miLibreria.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../miLibreria/miLibreria.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

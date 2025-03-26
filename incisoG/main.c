@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "miLibreria.h"
-#define MAX_HEXA "FFFF"
-#define MIN_HEXA "0000"
 
 int numeroHexadecimalValido(char[]);
-void convertirNumHexaABinario(char[], int[]);
-void convertirNumBinarioADecimal(int[], char[]);
+int convertirNumHexaABinario(char[]);
+void convertirNumBinarioADecimal(int, char[]);
 int leerNumeroHexadecimal(char[]);
 int esDigitoHexa(char);
-int dentroRangoHexa(char[]);
 int convertirDigitoHexaABinario(char);
 
 int main()
@@ -22,12 +18,12 @@ int main()
 
     printf("\nEl numero en hexadecimal es: %s", hexaIngresado);
 
-    int numeroPuntoFijo[16]; // binario
-    convertirNumHexaABinario(hexaIngresado, numeroPuntoFijo);
+    int numeroPuntoFijo; // binario
+    numeroPuntoFijo=convertirNumHexaABinario(hexaIngresado);
+
     printf("\nEl numero en binario es: ");
-    for (int i = 0; i < 16; i++)
-    {
-        printf("%d", numeroPuntoFijo[i]);
+    for (int i = 15; i >= 0; i--) {
+        printf("%d", (numeroPuntoFijo >> i) & 1);  // Extraer cada bit individual
     }
 
     char numeroDecimal[10]; // decimal --> �eee.ffff + '\0'
@@ -42,15 +38,8 @@ int numeroHexadecimalValido(char *hexaIngresado)
 {
     if (leerNumeroHexadecimal(hexaIngresado) == 1)
     {
-        printf("El n�mero ingresado no cumple con el formato 0xHHHH \n");
-        return 1; // no cumpli� con el formato
-    }
-
-    // si llego ac�, esta bien el formato, pero no se si est� dentro del rango
-    if (dentroRangoHexa(hexaIngresado) == 2)
-    {
-        printf("El n�mero se sale del rango de representaci�n \n");
-        return 1;
+        printf("El numero ingresado no cumple con el formato 0xHHHH \n");
+        return 1; // no cumplio con el formato
     }
 
     return 0; // salio todo bien
@@ -58,7 +47,7 @@ int numeroHexadecimalValido(char *hexaIngresado)
 
 int esDigitoHexa(char c)
 {
-    // me fijo si el caracter est� entre 'A' y 'F', o '0' y '9'
+    // me fijo si el caracter esta entre 'A' y 'F', o '0' y '9'
     if ((c > ('A' - 1)) && (c < ('F' + 1)))
         return 0;
     if ((c > ('0' - 1)) && (c < ('9' + 1)))
@@ -68,11 +57,10 @@ int esDigitoHexa(char c)
 
 int leerNumeroHexadecimal(char *hexaIngresado)
 {
-    printf("\nIngrese un n�mero hexadecimal con el siguiente formato: 0xHHHH \n");
+    printf("\nIngrese un numero hexadecimal con el siguiente formato: 0xHHHH \n");
     scanf("%s", hexaIngresado);
 
     printf("\nEl hexa ingresado es: %s\n", hexaIngresado);
-    printf("\nLongitud es: %d\n", strlen(hexaIngresado));
 
     if (strlen(hexaIngresado) != 4)
     {             // entiendo que el strlen no me cuenta el terminador \0
@@ -88,23 +76,7 @@ int leerNumeroHexadecimal(char *hexaIngresado)
         aux = esDigitoHexa(hexaIngresado[i]);
     }
 
-    return aux; // si est� todo bien retorna 0, si no retorna 1
-}
-
-int dentroRangoHexa(char *hexaIngresado)
-{
-
-    if (strcmp(hexaIngresado, MAX_HEXA) > 0)
-    {
-        return 2; // no lo puedo representar
-    }
-
-    if (strcmp(hexaIngresado, MIN_HEXA) < 0)
-    {
-        return 2; // no lo puedo representar
-    }
-
-    return 0; // est� dentro del rango
+    return aux; // si esta todo bien retorna 0, si no retorna 1
 }
 
 int convertirDigitoHexaABinario(char c)
@@ -116,7 +88,7 @@ int convertirDigitoHexaABinario(char c)
     case '1':
         return 0b0001; // si no lo indico, entonces me toma
     case '2':
-        return 0b0010; // como n�meros octales y no como binario
+        return 0b0010; // como numeros octales y no como binario
     case '3':
         return 0b0011;
     case '4':
@@ -148,60 +120,52 @@ int convertirDigitoHexaABinario(char c)
     }
 }
 
-void convertirNumHexaABinario(char *hexaIngresado, int *numeroPuntoFijo)
+int convertirNumHexaABinario(char *hexaIngresado)
 {
-    int i = 0; // �ndice para recorrer hexaIngresado 0xHHHH
-    int j = 0; // �ndice para recorrer los bits de cada d�gito hexadecimal
-    int k = 0; // �ndice para cargar los bits en numeroPuntoFijo
+    char hex[5] = "FFFF";  // Ejemplo: FFFF en hexadecimal (4 dígitos)
+    int numeroPuntoFijo = 0;       // Aquí guardaremos el binario como un número entero
 
-    // Recorro cada d�gito hexa
-    for (i = 0; i < 4; i++)
-    {
-        // Convierto el d�gito hexa a binario de 4 bits
-        int aux = convertirDigitoHexaABinario(hexaIngresado[i]);
+    // Convertir cada carácter hexadecimal a su valor binario
+    for (int i = 0; i < 4; i++) {
+        char c = hexaIngresado[i];
+        int valor;
 
-        // Cargo los 4 bits en numeroPuntoFijo
-        for (j = 3; j >= 0; j--)
-        {
-            // Extraigo de atr�s para adelante, y voy cargando en numeroPuntoFijo
-            numeroPuntoFijo[k] = (aux >> j) & 1;
-            k++; // Avanzar al siguiente bit en numeroPuntoFijo
+        if (c >= '0' && c <= '9') {
+            valor = c - '0';           // Dígitos 0-9
+        } else if (c >= 'A' && c <= 'F') {
+            valor = 10 + (c - 'A');     // Letras mayúsculas A-F
+        } else {                    //no debería entrar aca, el valor ya tendria que ser valido
+            printf("Error: '%c' no es un dígito hexadecimal válido.\n", c);
         }
+
+        // Desplazar el binario 4 bits a la izquierda y agregar el nuevo valor
+        numeroPuntoFijo = (numeroPuntoFijo << 4) | valor;
     }
 
-    printf("\n\nA ver el binario final: ");
-    for (int i = 0; i < 16; i++)
-    {
-        printf("%d", numeroPuntoFijo[i]);
-    }
+    return numeroPuntoFijo;
+
 }
 
-void convertirNumBinarioADecimal(int *numeroPuntoFijo, char *numeroDecimal)
+void convertirNumBinarioADecimal(int numeroPuntoFijo, char *numeroDecimal)
 {
-    // guardo signo
-    int signo = numeroPuntoFijo[0];
+    // Extraer el bit de signo (bit 15)
+    int signo = (numeroPuntoFijo >> 15) & 1;
+    // Extraer parte entera (7 bits, posiciones 14 a 8)
+    int parteEntera = (numeroPuntoFijo >> 8) & 0b01111111;
+    // Extraer parte fraccionaria (8 bits, posiciones 7 a 0)
+    int parteFraccionaria = numeroPuntoFijo & 0b11111111;
 
-    // extraigo parte entera (7 bits)
-    int parteEntera = 0;
-    for (int i = 1; i < 8; i++)
-    {
-        parteEntera += numeroPuntoFijo[i] * (1 << (7 - i));
+    // Para números negativos: calcular el valor absoluto
+    if (signo == 1) {
+        // Invertir bits y restar 1 (ca2)
+        int valorAbsoluto = (~numeroPuntoFijo - 1) & 0x7FFF; // Máscara para 15 bits
+        parteEntera = (valorAbsoluto >> 8) & 0x7F;
+        parteFraccionaria = valorAbsoluto & 0xFF;
     }
 
-    // extraigo parte fraccionaria (8 bits)
-    int parteFraccionaria = 0;
-    for (int i = 8; i < 16; i++)
-    {
-        parteFraccionaria += numeroPuntoFijo[i] * (1 << (15 - i));
-    }
+    // Calcular la parte fraccionaria como valor decimal (0.xxxx)
+    int fraccionEscalada = (parteFraccionaria * 10000) / 256;  // Escalar a 4 decimales
 
-    // combino parte entera y fraccionaria en un mismo n�mero
-    int resultado = parteEntera * 256 + parteFraccionaria;
-    // ac� multiplico por 256, para desplazar el numero 8 lugares (2^8) y dejar esos bits en la parte baja para meter la parte fraccionaria
-
-    parteEntera = resultado / 256;       // parte entera real (dividir por 256)
-    parteFraccionaria = resultado % 256; // parte fraccionaria real (el resto de 256)
-
-    // genero el string en formato �eee.ffff
-    sprintf(numeroDecimal, "%s%d.%04d", (signo == 1) ? "-" : "+", parteEntera, parteFraccionaria);
+    // Formatear el resultado
+    sprintf(numeroDecimal, "%s%d.%d",(signo == 1) ? "-" : "+",parteEntera,fraccionEscalada);
 }
