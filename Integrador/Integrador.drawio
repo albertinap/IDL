@@ -205,16 +205,17 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="1617" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1103" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ioLFR17E4ViIQYoxCpSj-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" target="5YCoUz0_5GFnxVRF15zM-1" edge="1" source="XcIXjamz96Wju4GIK8jk-1">
+        <mxCell id="ioLFR17E4ViIQYoxCpSj-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" target="ioLFR17E4ViIQYoxCpSj-49" edge="1" source="XcIXjamz96Wju4GIK8jk-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="475" y="160" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="350" y="280" />
-              <mxPoint x="475" y="280" />
+              <mxPoint x="400" y="280" />
+              <mxPoint x="400" y="430" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -535,14 +536,15 @@
         <mxCell id="ioLFR17E4ViIQYoxCpSj-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ioLFR17E4ViIQYoxCpSj-49" target="5YCoUz0_5GFnxVRF15zM-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ioLFR17E4ViIQYoxCpSj-51" value="PAUSA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ioLFR17E4ViIQYoxCpSj-49" edge="1">
+        <mxCell id="ioLFR17E4ViIQYoxCpSj-51" value="PAUSA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry x="0.0076" y="19" relative="1" as="geometry">
-            <mxPoint x="285" y="590" as="targetPoint" />
+            <mxPoint x="270" y="590" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="285" y="560" />
-              <mxPoint x="285" y="560" />
+              <mxPoint x="270" y="570" />
+              <mxPoint x="270" y="570" />
             </Array>
             <mxPoint y="-1" as="offset" />
+            <mxPoint x="270" y="550" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ioLFR17E4ViIQYoxCpSj-49" value="LÓGICA DE CONTROL" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -642,10 +644,13 @@
         <mxCell id="ioLFR17E4ViIQYoxCpSj-69" value="el comparador también tendría que chequear que tenga consistencia la operación que estamos haciendo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" parent="1" vertex="1">
           <mxGeometry x="820" y="510" width="135" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="ioLFR17E4ViIQYoxCpSj-70" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.003;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ioLFR17E4ViIQYoxCpSj-59" edge="1">
+        <mxCell id="ioLFR17E4ViIQYoxCpSj-70" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" target="ioLFR17E4ViIQYoxCpSj-49" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="505" y="580" as="sourcePoint" />
             <mxPoint x="540" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="315" y="580" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="XcIXjamz96Wju4GIK8jk-1" value="MEMORIA" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
