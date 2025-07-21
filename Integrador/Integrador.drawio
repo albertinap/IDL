@@ -205,7 +205,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="578" dy="316" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1213" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -262,11 +262,14 @@
             <mxPoint x="8" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ioLFR17E4ViIQYoxCpSj-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="ioLFR17E4ViIQYoxCpSj-49">
+        <mxCell id="ioLFR17E4ViIQYoxCpSj-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1" target="ioLFR17E4ViIQYoxCpSj-49">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="293" y="461.57" as="targetPoint" />
             <mxPoint x="213" y="461.57" as="sourcePoint" />
-            <Array as="points" />
+            <Array as="points">
+              <mxPoint x="250" y="462" />
+              <mxPoint x="250" y="462" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="ioLFR17E4ViIQYoxCpSj-39" value="b1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ioLFR17E4ViIQYoxCpSj-38" vertex="1" connectable="0">
@@ -279,8 +282,8 @@
             <mxPoint x="293" y="440" as="targetPoint" />
             <mxPoint x="213" y="440" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="241" y="441" />
-              <mxPoint x="241" y="440" />
+              <mxPoint x="230" y="440" />
+              <mxPoint x="230" y="440" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -407,7 +410,8 @@
             <mxPoint x="293" y="414.58" as="targetPoint" />
             <mxPoint x="148" y="415" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="209" y="416" />
+              <mxPoint x="180" y="415" />
+              <mxPoint x="180" y="415" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -458,13 +462,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bBV2W6COJ8ChpkD-p2IN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="bBV2W6COJ8ChpkD-p2IN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="ioLFR17E4ViIQYoxCpSj-49">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="268" y="479.98" as="targetPoint" />
             <mxPoint x="212" y="479.55" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="240" y="480" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bBV2W6COJ8ChpkD-p2IN-2" value="b0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bBV2W6COJ8ChpkD-p2IN-1">
@@ -826,7 +828,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Imw-j2lDpRGIrovR1meU" name="LógicaDeControl">
-    <mxGraphModel dx="2205" dy="1205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1866" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
