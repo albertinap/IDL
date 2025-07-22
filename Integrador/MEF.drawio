@@ -1,79 +1,165 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.6">
   <diagram name="Página-1" id="CZZ1JAmR8IJBgsTyGCMB">
-    <mxGraphModel dx="564" dy="308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1277" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-1" value="Estados posibles:&lt;div&gt;- esperando recarga&lt;br&gt;&lt;div&gt;- cargando valor inicial&lt;/div&gt;&lt;div&gt;- cargando valor final&lt;/div&gt;&lt;div&gt;- esperando start&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- contando (sumando/comparando)&lt;/div&gt;&lt;div&gt;- apagado (no sé)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="10" width="300" height="160" as="geometry" />
-        </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-88" value="ESTADOS" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="210" width="128" height="37" as="geometry">
+          <mxGeometry x="60" y="110" width="128" height="37" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-90" value="Esperando recarga" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="247" width="128" height="33" as="geometry">
+          <mxGeometry x="60" y="147" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-93" value="Cargando valor inicial" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="280" width="128" height="33" as="geometry">
+          <mxGeometry x="60" y="180" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-94" value="Esperando Start" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="346" width="128" height="33" as="geometry">
-            <mxRectangle width="60" height="47" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-95" value="Contando" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="379" width="128" height="33" as="geometry">
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-94" value="Comparando incremento" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="246" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-96" value="Cargando valor final" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="313" width="128" height="33" as="geometry">
+          <mxGeometry x="60" y="213" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-97" value="Apagado" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="412" width="128" height="33" as="geometry">
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-97" value="Finalización de contador" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="345" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-98" value="SALIDAS" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="210" width="128" height="37" as="geometry">
+          <mxGeometry x="188" y="110" width="128" height="37" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-101" value="FIN" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="412" width="128" height="33" as="geometry">
+          <mxGeometry x="188" y="345" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-102" value="ERROR&lt;div&gt;FIN&lt;/div&gt;&lt;div&gt;PAUSA&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="220" width="100" height="70" as="geometry" />
-        </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-103" value="PAUSA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="346" width="128" height="33" as="geometry">
+          <mxGeometry x="188" y="246" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-104" value="PAUSA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="313" width="128" height="33" as="geometry">
+          <mxGeometry x="188" y="213" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-105" value="PAUSA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="280" width="128" height="33" as="geometry">
+          <mxGeometry x="188" y="180" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ARpDSlz6ylQ6p8zAoTG9-106" value="PAUSA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="218" y="247" width="128" height="33" as="geometry">
+          <mxGeometry x="188" y="147" width="128" height="33" as="geometry">
             <mxRectangle width="60" height="47" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-107" value="Sumando" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="312" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-108" value="Inconsistencia" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="279" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-109" value="Apagado" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="378" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-110" value="FIN" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="378" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-111" value="ERROR" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="279" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-112" value="Todo en cero" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="312" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-115" value="De este estado no se mueve, hasta que le llega la señal de clock" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="316" y="340.5" width="190" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-116" value="PAUSA" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="188" y="411" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-117" value="Reinicio de cuenta" style="connectable=0;recursiveResize=0;strokeColor=inherit;fillColor=none;align=center;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="411" width="128" height="33" as="geometry">
+            <mxRectangle width="60" height="47" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-119" value="Esperando recarga&lt;div&gt;PAUSA&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="ARpDSlz6ylQ6p8zAoTG9-120" target="ARpDSlz6ylQ6p8zAoTG9-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-135" value="START=1&lt;div&gt;RECARGAR=0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ARpDSlz6ylQ6p8zAoTG9-134">
+          <mxGeometry x="-0.0163" y="7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-120" value="Cargando valor final&lt;div&gt;PAUSA&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-121" value="Sumando&lt;div&gt;0&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="960" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-122" value="Finalización de contador&lt;div&gt;FIN&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="386" y="960" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-124" value="Inconsistencia&lt;div&gt;ERROR&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="875" y="820" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-125" value="Comparando incremento&lt;div&gt;PAUSA&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=1;" edge="1" parent="1" source="ARpDSlz6ylQ6p8zAoTG9-126" target="ARpDSlz6ylQ6p8zAoTG9-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-133" value="LOAD_I=0&lt;div&gt;LOAD_F=1&lt;/div&gt;&lt;div&gt;RECARGA=1&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ARpDSlz6ylQ6p8zAoTG9-132">
+          <mxGeometry x="-0.3027" y="-7" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-126" value="Cargando valor inicial&lt;div&gt;PAUSA&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-127" value="Apagado&lt;div&gt;FIN&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-128" value="&lt;div&gt;Reinicio de cuenta&lt;/div&gt;&lt;div&gt;PAUSA&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="690" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" edge="1" parent="1" source="ARpDSlz6ylQ6p8zAoTG9-119" target="ARpDSlz6ylQ6p8zAoTG9-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-131" value="RECARGA=1&lt;div&gt;LOAD_I=1&lt;/div&gt;&lt;div&gt;LOAD_F=0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ARpDSlz6ylQ6p8zAoTG9-129">
+          <mxGeometry x="-0.1311" y="5" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ARpDSlz6ylQ6p8zAoTG9-130" value="&lt;div&gt;ENTRADAS:&lt;/div&gt;b2&lt;div&gt;b1&lt;/div&gt;&lt;div&gt;b0&lt;/div&gt;&lt;div&gt;UP/DOWN&lt;/div&gt;&lt;div style=&quot;&quot;&gt;LOAD_I&lt;/div&gt;&lt;div style=&quot;&quot;&gt;LOAD_F&lt;/div&gt;&lt;div style=&quot;&quot;&gt;START&lt;/div&gt;&lt;div style=&quot;&quot;&gt;REINICIAR&lt;/div&gt;&lt;div style=&quot;&quot;&gt;CONTINUAR&lt;/div&gt;&lt;div style=&quot;&quot;&gt;CLOCK&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="195.5" width="250" height="164.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
