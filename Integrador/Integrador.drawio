@@ -1280,7 +1280,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Imw-j2lDpRGIrovR1meU" name="LógicaDeControl">
-    <mxGraphModel dx="3466" dy="1894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="233" dy="128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1628,7 +1628,7 @@
         <object label="ERROR" id="nyziat4H4PEor6MrHHJc-42">
           <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nyziat4H4PEor6MrHHJc-41">
             <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
-              <mxPoint x="19" y="-9" as="offset" />
+              <mxPoint x="48" y="-9" as="offset" />
             </mxGeometry>
           </mxCell>
         </object>
