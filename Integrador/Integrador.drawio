@@ -1298,7 +1298,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Imw-j2lDpRGIrovR1meU" name="LógicaDeControl">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1184" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1557,11 +1557,11 @@
         </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-6" value="CONTINUAR" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-0.3729" y="10" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="1120" as="sourcePoint" />
-            <mxPoint x="486" y="1120" as="targetPoint" />
+            <mxPoint x="276.5" y="1210" as="sourcePoint" />
+            <mxPoint x="502.5" y="1210" as="targetPoint" />
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="300" y="1120" />
+              <mxPoint x="316.5" y="1210" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1596,12 +1596,12 @@
         </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-17" value="FIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry x="-0.5973" y="12" relative="1" as="geometry">
-            <mxPoint x="486" y="1140" as="targetPoint" />
+            <mxPoint x="502.5" y="1230" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="260" y="1140" />
+              <mxPoint x="276.5" y="1230" />
             </Array>
             <mxPoint as="offset" />
-            <mxPoint x="260" y="1140" as="sourcePoint" />
+            <mxPoint x="276.5" y="1230" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-22" value="Comparador de incremento" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -1664,11 +1664,11 @@
         </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-47" value="RECARGAR" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry x="-0.3729" y="10" width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="1100" as="sourcePoint" />
-            <mxPoint x="486" y="1100" as="targetPoint" />
+            <mxPoint x="276.5" y="1184.64" as="sourcePoint" />
+            <mxPoint x="502.5" y="1184.64" as="targetPoint" />
             <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="300" y="1100" />
+              <mxPoint x="316.5" y="1184.64" />
             </Array>
           </mxGeometry>
         </mxCell>
