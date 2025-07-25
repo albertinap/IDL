@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.6" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.6" pages="5">
   <diagram name="General" id="EEAb1dHN6E-b4VubWDZU">
-    <mxGraphModel dx="1213" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1657" dy="1636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -596,7 +596,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="837" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -610,7 +610,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Qc2K__c022cVd2mK2GZm-2" value="valor_anterior" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Qc2K__c022cVd2mK2GZm-1">
+        <mxCell id="Qc2K__c022cVd2mK2GZm-2" value="valor_anterior" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Qc2K__c022cVd2mK2GZm-1">
           <mxGeometry x="0.5743" y="4" relative="1" as="geometry">
             <mxPoint y="-8" as="offset" />
           </mxGeometry>
@@ -1032,7 +1032,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="-9ecnvkPbBYXrfcMg7Aq" name="Memoria">
-    <mxGraphModel dx="1213" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1729,7 +1729,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rXro2FD5RgH2WmK8KGna-2" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="rXro2FD5RgH2WmK8KGna-1">
+        <mxCell id="rXro2FD5RgH2WmK8KGna-2" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rXro2FD5RgH2WmK8KGna-1">
           <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
             <mxPoint x="68" y="-9" as="offset" />
           </mxGeometry>
@@ -1744,7 +1744,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rXro2FD5RgH2WmK8KGna-5" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="rXro2FD5RgH2WmK8KGna-4">
+        <mxCell id="rXro2FD5RgH2WmK8KGna-5" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rXro2FD5RgH2WmK8KGna-4">
           <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
             <mxPoint x="68" y="-9" as="offset" />
           </mxGeometry>
