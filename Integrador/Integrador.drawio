@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.6" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.6" pages="5">
   <diagram name="General" id="EEAb1dHN6E-b4VubWDZU">
     <mxGraphModel dx="1213" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -596,7 +596,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="1657" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1213" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1078,10 +1078,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aTUoutm64uzHGiJH4FS_-55" value="REG_INICIAL" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="378" y="350" width="120" height="40" as="geometry" />
+          <mxGeometry x="378" y="340" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="aTUoutm64uzHGiJH4FS_-56" value="REG_FINAL" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="378" y="440" width="120" height="40" as="geometry" />
+          <mxGeometry x="378" y="460" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pu0M9ehR6o7AOuRwu4nf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1275,6 +1275,9 @@
         </mxCell>
         <mxCell id="1uMvfcea19B14Tt-p98g-25" value="MEMORIA VIEJO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;labelBackgroundColor=light-dark(#e4d3d3, #ededed);" parent="1" vertex="1">
           <mxGeometry x="405" y="1000" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z9wSJuNyod__vZ4tH7ma-1" value="REG_ACTUAL" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="378" y="400" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -1711,7 +1714,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rXro2FD5RgH2WmK8KGna-2" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rXro2FD5RgH2WmK8KGna-1">
+        <mxCell id="rXro2FD5RgH2WmK8KGna-2" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="rXro2FD5RgH2WmK8KGna-1">
           <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
             <mxPoint x="68" y="-9" as="offset" />
           </mxGeometry>
@@ -1726,7 +1729,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rXro2FD5RgH2WmK8KGna-5" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rXro2FD5RgH2WmK8KGna-4">
+        <mxCell id="rXro2FD5RgH2WmK8KGna-5" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="rXro2FD5RgH2WmK8KGna-4">
           <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
             <mxPoint x="68" y="-9" as="offset" />
           </mxGeometry>
