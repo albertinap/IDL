@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.6" pages="5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.6" pages="5">
   <diagram name="General" id="EEAb1dHN6E-b4VubWDZU">
     <mxGraphModel dx="1213" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -1280,7 +1280,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Imw-j2lDpRGIrovR1meU" name="LógicaDeControl">
-    <mxGraphModel dx="2426" dy="1326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="975" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1683,20 +1683,6 @@
             <mxPoint x="68" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nyziat4H4PEor6MrHHJc-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="755.5" y="1050" as="targetPoint" />
-            <mxPoint x="619" y="1050" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="619" y="1050" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nyziat4H4PEor6MrHHJc-103" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nyziat4H4PEor6MrHHJc-102" vertex="1" connectable="0">
-          <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
-            <mxPoint x="68" y="-9" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="755.5" y="1090" as="targetPoint" />
@@ -1714,6 +1700,21 @@
         </mxCell>
         <mxCell id="nyziat4H4PEor6MrHHJc-115" value="&lt;span style=&quot;background-color: light-dark(rgb(223, 243, 255), rgb(237, 237, 237));&quot;&gt;LÓGICA DE CONTINUACIÓN&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;labelBackgroundColor=light-dark(#FFFFFF,#EDEDED);" parent="1" vertex="1">
           <mxGeometry x="320" y="900" width="492.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rXro2FD5RgH2WmK8KGna-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="747" y="1600" as="targetPoint" />
+            <mxPoint x="648.5" y="1600" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="667.5" y="1600.4299999999998" />
+              <mxPoint x="667.5" y="1600.4299999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rXro2FD5RgH2WmK8KGna-2" value="b2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rXro2FD5RgH2WmK8KGna-1">
+          <mxGeometry x="-0.7221" y="2" relative="1" as="geometry">
+            <mxPoint x="68" y="-9" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
