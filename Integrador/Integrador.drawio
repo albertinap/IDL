@@ -205,7 +205,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="1011" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="233" dy="128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -247,7 +247,7 @@
           <mxGeometry x="253" y="30" width="595" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5YCoUz0_5GFnxVRF15zM-1" value="SUMADOR" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="513" y="430" width="120" height="120" as="geometry" />
+          <mxGeometry x="550" y="430" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="ioLFR17E4ViIQYoxCpSj-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -332,11 +332,10 @@
         </mxCell>
         <mxCell id="ioLFR17E4ViIQYoxCpSj-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="408.0000000000001" y="470" as="sourcePoint" />
-            <mxPoint x="513" y="470.02439024390253" as="targetPoint" />
+            <mxPoint x="408.0000000000001" y="467" as="sourcePoint" />
+            <mxPoint x="550" y="466.9999999999999" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="490" y="470" />
-              <mxPoint x="490" y="470" />
+              <mxPoint x="480" y="468" />
             </Array>
           </mxGeometry>
         </mxCell>
