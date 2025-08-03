@@ -205,7 +205,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MBViVHzpz38LwhrgYlLa" name="Contador Up/Down">
-    <mxGraphModel dx="1213" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1348" dy="737" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -627,6 +627,12 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="l-WNs-OrqmRSSar7OyQL-3" value="ERROR" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2310" y="380" as="targetPoint" />
+            <mxPoint x="2199.5" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="BiPCjlSdlrw1PSMewUh7-35" value="LÓGICA DE CONTROL" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2059.5" y="310" width="140" height="300" as="geometry" />
         </mxCell>
@@ -748,7 +754,7 @@
         <mxCell id="BiPCjlSdlrw1PSMewUh7-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1510" y="379.94000000000005" as="targetPoint" />
-            <mxPoint x="1420" y="379.94000000000005" as="sourcePoint" />
+            <mxPoint x="1400" y="380" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BiPCjlSdlrw1PSMewUh7-55" value="ERROR" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BiPCjlSdlrw1PSMewUh7-54" vertex="1" connectable="0">
@@ -917,6 +923,32 @@
         </mxCell>
         <mxCell id="BiPCjlSdlrw1PSMewUh7-75" value="__" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1925" y="552" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l-WNs-OrqmRSSar7OyQL-4" value="PAUSA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2290" y="410" as="targetPoint" />
+            <mxPoint x="2200" y="410.2941176470588" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-WNs-OrqmRSSar7OyQL-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2290" y="410" as="sourcePoint" />
+            <mxPoint x="1420" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2290" y="680" />
+              <mxPoint x="1420" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-WNs-OrqmRSSar7OyQL-6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2310" y="380" as="sourcePoint" />
+            <mxPoint x="1400" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2310" y="700" />
+              <mxPoint x="1400" y="701" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
