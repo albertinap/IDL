@@ -1349,7 +1349,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qyrCSXVjpLVZTAWIqJZ2" name="Comparador">
-    <mxGraphModel dx="1011" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2426" dy="1326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1469,7 +1469,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3GOuzzQ6kXZ9aPwElxMA" name="Sumador">
-    <mxGraphModel dx="2205" dy="1205" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="735" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1549,7 +1549,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hS71xSYMDERAiHYNWIMs-23" value="resultado[11..0]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hS71xSYMDERAiHYNWIMs-22" vertex="1" connectable="0">
+        <mxCell id="hS71xSYMDERAiHYNWIMs-23" value="resultado" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hS71xSYMDERAiHYNWIMs-22" vertex="1" connectable="0">
           <mxGeometry x="0.1742" y="1" relative="1" as="geometry">
             <mxPoint x="12" y="-13" as="offset" />
           </mxGeometry>
