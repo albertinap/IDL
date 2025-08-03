@@ -919,7 +919,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Imw-j2lDpRGIrovR1meU" name="LógicaDeControl">
-    <mxGraphModel dx="1617" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="933" dy="510" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1067,7 +1067,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nyziat4H4PEor6MrHHJc-49" value="valor_inical" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nyziat4H4PEor6MrHHJc-48" connectable="0" vertex="1">
+        <mxCell id="nyziat4H4PEor6MrHHJc-49" value="valor_inicial" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nyziat4H4PEor6MrHHJc-48" connectable="0" vertex="1">
           <mxGeometry x="0.1742" y="1" relative="1" as="geometry">
             <mxPoint x="-53" y="-13" as="offset" />
           </mxGeometry>
@@ -1469,7 +1469,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3GOuzzQ6kXZ9aPwElxMA" name="Sumador">
-    <mxGraphModel dx="735" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1516" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
